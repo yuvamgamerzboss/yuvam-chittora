@@ -1,0 +1,1282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUVAM CHITTORA | Gaming Universe</title>
+<style>
+#youtube-videos {
+  padding: 40px 5%;
+  color: white;
+}
+
+#youtube-videos h2 {
+  color: #00eaff;
+  margin: 30px 0 20px;
+  font-size: 28px;
+  text-shadow: 0 0 12px #00eaff;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+/* PREMIUM VIDEO CARDS */
+
+.video-card {
+  display: block;
+  background: linear-gradient(145deg, #17172b, #090914);
+  border: 1px solid #393956;
+  border-radius: 16px;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.35s ease,
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+  transform-style: preserve-3d;
+}
+
+.video-card:hover {
+  transform: translateY(-10px) scale(1.025);
+  border-color: #00eaff;
+  box-shadow:
+    0 0 12px #00eaff,
+    0 0 25px #a855f7,
+    0 0 40px #ff3155;
+}
+
+.thumbnail-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.video-card:hover img {
+  transform: scale(1.08);
+}
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(90deg, #ff1744, #ff6d00);
+  color: white;
+  padding: 5px 11px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 12px #ff1744;
+  z-index: 2;
+}
+
+.video-card h3 {
+  padding: 14px 12px 8px;
+  font-size: 15px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.video-card:hover h3 {
+  color: #00eaff;
+}
+.video-card h3 {
+  padding: 12px 12px 5px;
+  font-size: 15px;
+}
+
+.video-info {
+  padding: 0 12px 14px;
+  color: #00eaff;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  #youtube-videos {
+    padding: 25px 4%;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .video-card h3 {
+    font-size: 13px;
+  }
+}
+</style>
+<style>
+#youtube-videos {
+  padding: 40px 5%;
+  color: white;
+}
+
+#youtube-videos h2 {
+  color: #00eaff;
+  margin: 30px 0 20px;
+  font-size: 28px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.video-card {
+  display: block;
+  background: #151522;
+  border: 1px solid #393956;
+  border-radius: 14px;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+} 
+
+.video-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #00eaff;
+  box-shadow:
+    0 0 10px #00eaff,
+    0 0 25px #8b00ff,
+    0 0 40px #ff1744;
+}
+.video-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.video-card:hover img {
+  transform: scale(1.06);
+}
+<style>
+.gaming-showcase {
+  position: relative;
+  min-height: 380px;
+  padding: 45px 7%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(ellipse at center, #241044, #080814 70%);
+}
+
+.showcase-content {
+  position: relative;
+  z-index: 2;
+}
+
+.showcase-tag {
+  color: #00eaff;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.showcase-content h2 {
+  font-size: clamp(25px, 5vw, 48px);
+  color: white;
+  margin: 18px 0;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+.showcase-content h2 span {
+  color: #ff3155;
+  text-shadow: 0 0 18px #ff3155;
+}
+
+.showcase-content p {
+  color: #bbb;
+  letter-spacing: 3px;
+}
+
+.showcase-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.showcase-stats div {
+  padding: 12px 18px;
+  border: 1px solid #713cff;
+  border-radius: 10px;
+  background: #15102b;
+  color: #00eaff;
+  font-size: 12px;
+  box-shadow: 0 0 12px #713cff55;
+}
+.showcase-stats div {
+  padding: 12px 18px;
+  border: 1px solid #713cff;
+  border-radius: 10px;
+  background: #15102b;
+  color: #00eaff;
+  font-size: 12px;
+  box-shadow: 0 0 12px #713cff55;
+  animation: statsReveal .8s ease-out both;
+  transition: .3s ease;
+}
+
+.showcase-stats div:nth-child(1) {
+  animation-delay: .3s;
+}
+
+.showcase-stats div:nth-child(2) {
+  animation-delay: .6s;
+}
+
+.showcase-stats div:nth-child(3) {
+  animation-delay: .9s;
+}
+
+.showcase-stats div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #00eaff;
+}
+
+@keyframes statsReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.portal-ring {
+  width: 130px;
+  height: 130px;
+  margin: 35px auto 0;
+  border: 3px solid #00eaff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background: radial-gradient(circle, #241044, #080814);
+  box-shadow: 0 0 20px #00eaff,
+              inset 0 0 25px #713cff;
+  animation: portalPulse 2s infinite alternate;
+}
+
+.portal-ring::before {
+  content: "";
+  position: absolute;
+  inset: -13px;
+  border: 3px solid #a855f7;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: #ff3155;
+  animation: portalSpin 3s linear infinite;
+  z-index: -1;
+}
+
+.portal-ring::after {
+  content: "";
+  position: absolute;
+  inset: -24px;
+  border: 2px dashed #00eaff;
+  border-radius: 50%;
+  animation: portalSpinReverse 7s linear infinite;
+  z-index: -1;
+}
+
+@keyframes portalSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes portalSpinReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes portalPulse {
+  from {
+    transform: scale(.95);
+    box-shadow: 0 0 15px #00eaff;
+  }
+  to {
+    transform: scale(1.06);
+    box-shadow: 0 0 35px #a855f7,
+                inset 0 0 30px #713cff;
+  }
+}
+@media(max-width:600px) {
+  .gaming-showcase {
+    min-height: 350px;
+    padding: 35px 5%;
+  }
+}
+.gaming-showcase {
+  border-bottom: none;
+  position: relative;
+}
+
+.gaming-showcase::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00eaff,
+    #a855f7,
+    #ff3155,
+    transparent
+  );
+  box-shadow: 0 0 15px #00eaff;
+}
+
+.gaming-showcase + main .hero {
+  margin-top: 0 !important;
+  background:
+    linear-gradient(180deg, #160d2b, transparent 45%),
+    radial-gradient(circle at 80% 40%, #30104b, #080814 60%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080814;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6%;
+  background: rgba(10,10,25,0.95);
+  border-bottom: 1px solid #00eaff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  color: #00eaff;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #00eaff;
+}
+
+section {
+  padding: 80px 7%;
+}
+.hero {
+  min-height: auto;
+  padding: 35px 7% 55px;
+  margin-top: 0 !important;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 80% 40%, #30104b, #080814 60%);
+}
+
+.tag {
+  color: #00eaff;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(50px, 9vw, 100px);
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #ff3155;
+  text-shadow: 0 0 25px #ff3155;
+}
+
+.hero p {
+  max-width: 600px;
+  line-height: 1.8;
+  color: #c5c5d8;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #00eaff;
+  color: #080814;
+}
+
+.secondary {
+  border: 1px solid #a855f7;
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading h2 {
+  color: #00eaff;
+  font-size: clamp(25px, 4vw, 38px);
+  margin-bottom: 12px;
+}
+
+.heading p {
+  color: #aaaac0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: #151522;
+  border: 1px solid #393956;
+  padding: 28px;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #00eaff;
+  box-shadow: 0 0 22px #00eaff44;
+}
+
+.card .icon {
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  color: #00eaff;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #c5c5d8;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #00eaff;
+  text-decoration: none;
+}
+
+.themes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.theme {
+  padding: 14px 20px;
+  background: #151522;
+  color: white;
+  border: 1px solid #a855f7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.theme:hover {
+  box-shadow: 0 0 15px #a855f7;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #10101d;
+  border-top: 1px solid #393956;
+  color: #aaaac0;
+}
+
+@media(max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 13px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+}
+.hero {
+  min-height: 0 !important;
+  height: auto !important;
+  padding-top: 15px !important;
+  margin-top: 0 !important;
+}
+</style>
+<style>
+.gaming-showcase {
+  position: relative;
+  min-height: 380px;
+  padding: 45px 7%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(ellipse at center, #241044, #080814 70%);
+}
+
+.showcase-content {
+  position: relative;
+  z-index: 2;
+}
+
+.showcase-tag {
+  color: #00eaff;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.showcase-content h2 {
+  font-size: clamp(25px, 5vw, 48px);
+  color: white;
+  margin: 18px 0;
+  text-shadow: 0 0 15px #00eaff;
+  animation: headingReveal 1.2s ease-out both;
+}
+
+@keyframes headingReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(.8);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+.showcase-content p {
+  color: #bbb;
+  letter-spacing: 3px;
+}
+
+.showcase-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
+.showcase-stats div {
+  padding: 12px 18px;
+  border: 1px solid #713cff;
+  border-radius: 10px;
+  background: #15102b;
+  color: #00eaff;
+  font-size: 12px;
+  box-shadow: 0 0 12px #713cff55;
+  animation: statsReveal .8s ease-out both;
+  transition: .3s ease;
+}
+
+.showcase-stats div:nth-child(1) {
+  animation-delay: .3s;
+}
+
+.showcase-stats div:nth-child(2) {
+  animation-delay: .6s;
+}
+
+.showcase-stats div:nth-child(3) {
+  animation-delay: .9s;
+}
+
+.showcase-stats div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #00eaff;
+}
+
+@keyframes statsReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@media(max-width:600px) {
+  .gaming-showcase {
+    min-height: 350px;
+    padding: 35px 5%;
+  }
+}
+.gaming-showcase {
+  border-bottom: none;
+  position: relative;
+}
+
+.gaming-showcase::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00eaff,
+    #a855f7,
+    #ff3155,
+    transparent
+  );
+  box-shadow: 0 0 15px #00eaff;
+}
+
+.gaming-showcase + main .hero {
+  margin-top: 0 !important;
+  background:
+    linear-gradient(180deg, #160d2b, transparent 45%),
+    radial-gradient(circle at 80% 40%, #30104b, #080814 60%);
+}
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+  <div class="logo">
+  <img src="logo.jpg" alt="Yuvam Chittora Logo"
+  style="width:50px;height:50px;object-fit:cover;border-radius:50%;border:2px solid #00f5ff;">
+  <span>YUVAM CHITTORA</span>
+</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#content">Content</a>
+    <a href="#social">Socials</a>
+    <a href="#themes">Themes</a>
+  </nav>
+</header>
+<section class="gaming-showcase">
+  <div class="portal-glow"></div>
+
+  <div class="showcase-content">
+    <span class="showcase-tag">WELCOME TO THE NEXT LEVEL</span>
+
+    <h2>ENTER THE <span>GAMING ZONE</span></h2>
+
+    <p>GAMING • CREATIVITY • ENTERTAINMENT</p>
+
+    <div class="showcase-stats">
+      <div>🎮 <strong>GAMER</strong></div>
+      <div>🎬 <strong>VIDEO CREATOR</strong></div>
+      <div>⚡ <strong>YGB EDITZ</strong></div>
+    </div>
+
+    <div class="portal-ring">YUVAM</div>
+  </div>
+</section>
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="tag">WELCOME TO MY GAMING UNIVERSE</div>
+    <h1>YUVAM<br><span>CHITTORA</span></h1>
+    <p>
+      Gaming is not just a hobby. It's an adventure.
+      Welcome to my world of gaming, livestreams,
+      epic moments and unforgettable edits!
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#social">EXPLORE MY WORLD ↗</a>
+      <a class="btn secondary" href="#content">DISCOVER MORE</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="heading">
+    <h2>THE GAMER BEHIND THE SCREEN</h2>
+    <p>One player. Endless adventures.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🎮</div>
+      <h3>GAMING</h3>
+      <p>Gameplay, challenges, adventures and crazy moments.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>LIVE STREAMS</h3>
+      <p>Join the streams and become part of the action.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔥</div>
+      <h3>GAMING COMMUNITY</h3>
+      <p>A place for gamers, friends and unforgettable memories.</p>
+    </div>
+  </div>
+</section>
+
+<section id="content">
+  <div class="heading">
+    <h2>MY CONTENT ZONE</h2>
+    <p>Choose your next adventure.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📺</div>
+      <h3>YOUTUBE VIDEOS</h3>
+      <p>Watch gaming videos and entertaining content.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎬</div>
+      <h3>SHORTS & EDITS</h3>
+      <p>Fast-paced edits, highlights and epic clips.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🕹️</div>
+      <h3>GAMING ADVENTURES</h3>
+      <p>Explore different games and exciting challenges.</p>
+    </div>
+  </div>
+<div id="youtube-videos"></div>
+</section>
+<section id="social">
+  <div class="heading">
+    <h2>JOIN MY COMMUNITY</h2>
+    <p>Follow me on all my platforms!</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">
+  <img src="https://cdn.simpleicons.org/youtube/FF0000"
+  style="width:35px;height:35px;">
+</div>
+      <h3>YOUTUBE</h3>
+      <p><a href="https://youtube.com/@gamingbyyuvam" target="_blank">Gaming By Yuvam</a></p>
+      <p><a href="https://youtube.com/@yuvamgamerzboss67" target="_blank">Yuvam Gamerz Boss 67</a></p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📸</div>
+      <h3>INSTAGRAM</h3>
+
+      <p><img src="yuvam_chittora.jpg" width="45" height="45" style="border-radius:50%;vertical-align:middle;object-fit:cover;margin-right:10px"><a href="https://www.instagram.com/yuvam_chittora/" target="_blank">@yuvam_chittora</a></p>
+
+      <p><img src="gby_editz67.jpg" width="45" height="45" style="border-radius:50%;vertical-align:middle;object-fit:cover;margin-right:10px"><a href="https://www.instagram.com/gby_editz67" target="_blank">@gby_editz67</a></p>
+
+      <p><img src="realyuvamchittora.jpg" width="45" height="45" style="border-radius:50%;vertical-align:middle;object-fit:cover;margin-right:10px"><a href="https://www.instagram.com/realyuvamchittora" target="_blank">@realyuvamchittora</a></p>
+
+      <p><img src="ygb_editz67.jpg" width="45" height="45" style="border-radius:50%;vertical-align:middle;object-fit:cover;margin-right:10px"><a href="https://www.instagram.com/ygb_editz67" target="_blank">@ygb_editz67</a></p>
+
+      <p><img src="strickerstyle13.jpg" width="45" height="45" style="border-radius:50%;vertical-align:middle;object-fit:cover;margin-right:10px"><a href="https://www.instagram.com/strickerstyle13" target="_blank">@strickerstyle13</a></p>
+
+      <p><img src="realdoomsmp.jpg" width="45" height="45" style="border-radius:50%;vertical-align:middle;object-fit:cover;margin-right:10px"><a href="https://www.instagram.com/realdoomsmp" target="_blank">@realdoomsmp</a></p>
+    </div>
+
+    <div class="card">
+     <div class="icon">
+  <img src="https://cdn.simpleicons.org/discord/5865F2"
+  style="width:35px;height:35px;">
+</div>
+      <h3>DISCORD</h3>
+      <p><a href="https://discord.com/users/1534194874801459394" target="_blank">My Discord Profile</a></p>
+    </div>
+
+  </div>
+</section>
+<section id="themes">
+  <div class="heading">
+    <h2>CHANGE YOUR EXPERIENCE</h2>
+    <p>Choose your favourite colour combination.</p>
+  </div>
+  <div class="themes">
+    <button class="theme" onclick="setTheme('#00f5ff','#ff3155','#a855f7')">NEON FUSION</button>
+    <button class="theme" onclick="setTheme('#00f5ff','#0099ff','#1748a5')">NEON BLUE</button>
+    <button class="theme" onclick="setTheme('#a855f7','#ff3155','#6d28d9')">CYBER PURPLE</button>
+    <button class="theme" onclick="setTheme('#ff3155','#ff7b35','#9d174d')">INFERNO RED</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  © <span id="year"></span> YUVAM CHITTORA | ALL RIGHTS RESERVED
+  <p style="margin-top:10px">BUILT FOR GAMERS. POWERED BY PASSION. ⚡</p>
+</footer>
+<script>
+const API_KEY = "AIzaSyAAFRejl9toFC4PzZfZgGIFMvTXuCTkZ6s";
+
+const CHANNELS = [
+  {
+    name: "GAMING BY YUVAM",
+    playlist: "UUBKTuc9eaiDbnLhyph78Yxg"
+  },
+  {
+    name: "YUVAM GAMERZ BOSS 67",
+    playlist: "UUjvmn5qUsOlImVUMA8TWldw"
+  }
+];
+
+async function loadVideos() {
+  const container = document.querySelector("#youtube-videos");
+
+  if (!container) {
+    console.error("Gallery container not found!");
+    return;
+  }
+
+  container.innerHTML = "";
+
+  for (const channel of CHANNELS) {
+    try {
+      const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${channel.playlist}&key=${API_KEY}`;
+
+      const response = await fetch(url);
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.error("YouTube API Error:", data);
+        continue;
+      }
+
+      const items = (data.items || []).filter(
+        item => item.snippet?.resourceId?.videoId
+      );
+
+      if (items.length === 0) continue;
+
+      const videoIds = items
+        .map(item => item.snippet.resourceId.videoId)
+        .join(",");
+
+      const statsUrl = `https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${videoIds}&key=${API_KEY}`;
+
+      const statsResponse = await fetch(statsUrl);
+      const statsData = await statsResponse.json();
+
+      const viewCounts = {};
+
+      (statsData.items || []).forEach(video => {
+        viewCounts[video.id] = Number(
+          video.statistics.viewCount || 0
+        );
+      });
+
+     const section = document.createElement("section");
+
+section.innerHTML = `
+  <h2>${channel.name}</h2>
+  <div class="video-grid">
+    ${items.map(item => {
+      const videoId = item.snippet.resourceId.videoId;
+      const title = item.snippet.title;
+      const videoDate = new Date(
+        item.snippet.publishedAt
+      ).toLocaleDateString("en-IN");
+
+      const isNew =
+        Date.now() - new Date(item.snippet.publishedAt).getTime()
+        < 7 * 24 * 60 * 60 * 1000;
+
+      const thumbnail =
+        item.snippet.thumbnails.high?.url ||
+        item.snippet.thumbnails.medium?.url;
+
+      return `
+        <a class="video-card"
+           href="https://www.youtube.com/watch?v=${videoId}"
+           target="_blank" rel="noopener">
+
+          <div class="thumbnail-wrap">
+            <img src="${thumbnail}" alt="">
+            ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+          </div>
+
+          <h3>${title}</h3>
+
+          <p class="video-info">
+            👁️ ${viewCounts[videoId]?.toLocaleString("en-IN") || "0"} views
+            <span>📅 ${videoDate}</span>
+          </p>
+        </a>
+      `;
+    }).join("")}
+  </div>
+`;
+container.appendChild(section);
+
+    } catch (error) {
+      console.error("Gallery error:", error);
+    }
+  }
+}
+
+loadVideos();
+</script>
+header, main, footer {
+  position: relative;
+  z-index: 1;
+}
+
+.gaming-showcase {
+  position: relative;
+  min-height: 380px;
+  padding: 45px 7%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(ellipse at center, #241044, #080814 70%);
+  border-bottom: 1px solid #713cff;
+}
+
+.showcase-content {
+  position: relative;
+  z-index: 2;
+}
+
+.showcase-tag {
+  color: #00eaff;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.showcase-content h2 {
+  font-size: clamp(25px, 5vw, 48px);
+  color: white;
+  margin: 18px 0;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+.showcase-content h2 span {
+  color: #ff3155;
+  text-shadow: 0 0 18px #ff3155;
+}
+
+.showcase-content p {
+  color: #bbb;
+  letter-spacing: 3px;
+}
+
+.showcase-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.showcase-stats div {
+  padding: 12px 18px;
+  border: 1px solid #713cff;
+  border-radius: 10px;
+  background: #15102b;
+  color: #00eaff;
+  font-size: 12px;
+  box-shadow: 0 0 12px #713cff55;
+}
+
+.portal-ring {
+  width: 110px;
+  height: 110px;
+  margin: 25px auto 0;
+  border: 3px solid #00eaff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-shadow: 0 0 15px #00eaff, 0 0 35px #a855f7, inset 0 0 20px #713cff;
+  animation: portalPulse 2s infinite alternate;
+}
+
+@keyframes portalPulse {
+  from {
+    transform: scale(.95);
+    box-shadow: 0 0 12px #00eaff;
+  }
+  to {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #a855f7;
+  }
+}
+
+.gaming-showcase::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00eaff, #a855f7, #ff3155, transparent);
+  box-shadow: 0 0 15px #00eaff;
+}
+
+@media(max-width:600px) {
+  .gaming-showcase {
+    min-height: 350px;
+    padding: 35px 5%;
+  }
+}
+</style>
+<script>
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+
+let w, h;
+let particles = [];
+
+function resizeCanvas() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+for (let i = 0; i < 65; i++) {
+  particles.push({
+    x: Math.random() * w,
+    y: Math.random() * h,
+    size: Math.random() * 2 + 1,
+    speed: Math.random() * 0.8 + 0.2,
+    color: ["#00eaff", "#ff3155", "#a855f7"][i % 3]
+  });
+}
+
+function animate() {
+  ctx.clearRect(0, 0, w, h);
+
+  particles.forEach(p => {
+    p.y -= p.speed;
+
+    if (p.y < 0) {
+      p.y = h;
+      p.x = Math.random() * w;
+    }
+
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.fillStyle = p.color;
+    ctx.shadowBlur = 12;
+    ctx.shadowColor = p.color;
+    ctx.fill();
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+<script>
+const rainCanvas = document.createElement("canvas");
+rainCanvas.id = "digital-rain";
+document.body.appendChild(rainCanvas);
+
+const rainCtx = rainCanvas.getContext("2d");
+
+rainCanvas.style.cssText = `
+position:fixed;
+inset:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:0;
+opacity:0.18;
+`;
+
+let rainWidth, rainHeight, columns, drops;
+
+function setupRain() {
+  rainWidth = rainCanvas.width = window.innerWidth;
+  rainHeight = rainCanvas.height = window.innerHeight;
+  columns = Math.floor(rainWidth / 22);
+  drops = Array(columns).fill(1);
+}
+
+window.addEventListener("resize", setupRain);
+setupRain();
+
+function drawRain() {
+  rainCtx.clearRect(0, 0, rainWidth, rainHeight);
+  rainCtx.font = "15px monospace";
+
+  drops.forEach((y, i) => {
+    const colors = ["#00eaff", "#a855f7", "#ff3155"];
+    rainCtx.fillStyle = colors[i % 3];
+    rainCtx.fillText(
+      Math.random() > 0.5 ? "1" : "0",
+      i * 22,
+      y * 22
+    );
+
+    if (y * 22 > rainHeight && Math.random() > 0.975) {
+      drops[i] = 0;
+    }
+
+    drops[i]++;
+  });
+
+  requestAnimationFrame(drawRain);
+}
+
+drawRain();
+</script>
+<script>
+const electricCanvas = document.createElement("canvas");
+electricCanvas.style.cssText = `
+position:fixed;
+inset:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:0;
+opacity:0.35;
+`;
+document.body.appendChild(electricCanvas);
+
+const electricCtx = electricCanvas.getContext("2d");
+
+let ew, eh, bolts = [];
+
+function resizeElectric() {
+  ew = electricCanvas.width = window.innerWidth;
+  eh = electricCanvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", resizeElectric);
+resizeElectric();
+
+function createBolt() {
+  const x = Math.random() * ew;
+  const y = Math.random() * eh;
+  const color = ["#00eaff", "#ff3155", "#a855f7"][
+    Math.floor(Math.random() * 3)
+  ];
+
+  bolts.push({ x, y, color, life: 12 });
+}
+
+function drawElectric() {
+  electricCtx.clearRect(0, 0, ew, eh);
+
+  if (Math.random() > 0.96) createBolt();
+
+  bolts.forEach((b, i) => {
+    electricCtx.beginPath();
+    electricCtx.moveTo(b.x, b.y);
+
+    let x = b.x;
+    let y = b.y;
+
+    for (let j = 0; j < 5; j++) {
+      x += Math.random() * 35 - 17;
+      y += Math.random() * 25 - 12;
+      electricCtx.lineTo(x, y);
+    }
+
+    electricCtx.strokeStyle = b.color;
+    electricCtx.shadowColor = b.color;
+    electricCtx.shadowBlur = 15;
+    electricCtx.lineWidth = 2;
+    electricCtx.stroke();
+
+    b.life--;
+    if (b.life <= 0) bolts.splice(i, 1);
+  });
+
+  requestAnimationFrame(drawElectric);
+}
+
+drawElectric();
+</script>
+</body>
+</html>
